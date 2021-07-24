@@ -27,14 +27,14 @@ namespace MongoDbTest
             {
                 Console.WriteLine($"Successfly !");
             }
-            
+
 
             //var query = new QueryDocument { { "Name", "Mehmet" } };
             //var result = collection.FindAs<TestData>(sorgu).FirstOrDefault();
-            //Console.WriteLine(resylt.Name);
+            //Console.WriteLine(result.Name);
         }
 
-      
+
         public static WriteConcernResult Insert<T>(T data,string collection)
         {
             MongoClient client = new MongoClient();
